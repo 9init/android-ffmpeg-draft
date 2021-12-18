@@ -1,0 +1,14 @@
+prefix=/home/hesham/arm64-v8a
+exec_prefix=${prefix}
+libdir=/home/hesham/arm64-v8a/lib
+includedir=/home/hesham/arm64-v8a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.11.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

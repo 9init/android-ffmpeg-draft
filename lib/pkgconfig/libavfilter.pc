@@ -1,0 +1,14 @@
+prefix=/home/hesham/arm64-v8a
+exec_prefix=${prefix}
+libdir=/home/hesham/arm64-v8a/lib
+includedir=/home/hesham/arm64-v8a/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 8.20.100
+Requires: libavutil >= 57.11.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
